@@ -279,26 +279,21 @@ for agua2 in Agua[2:5]:
     print(agua2.title())
 print(Fore.LIGHTMAGENTA_EX+"2:"+Style.RESET_ALL)
 """
-
     Ejercicios: 
         
-        Pruebas Condicionales: Escribe una serie de pruebas condicionales.
+    (1)  Pruebas Condicionales: Escribe una serie de pruebas condicionales.
         Imprime una declaración que describa cada prueba y tu predicción 
         para el resultado de cada prueba. Tu código debería verse algo así:
-        
             car = 'bocho'
             print("¿Es car == 'bocho'? Predigo que es True.")
             print(car == 'bocho')
             print("\n¿Es car == 'audi'? Predigo que es False.")
-            print(car == 'audi')
-        
-        Observa de cerca tus resultados y asegúrate de entender por qué 
+            print(car == 'audi')      
+    (2)   Observa de cerca tus resultados y asegúrate de entender por qué 
         cada línea se evalúa como True o False. Crea al menos 10 pruebas.
         Haz que al menos 5 pruebas se evalúen como True y otras 5 se evalúen 
         como False.
-        
-
-        Más Pruebas Condicionales: No tienes que limitar el número de pruebas
+    (3)  Más Pruebas Condicionales: No tienes que limitar el número de pruebas
         a 10. Si quieres intentar más comparaciones, escribe más pruebas y 
         añádelas a tu script. Asegúrate de tener al menos un 
         resultado True y un resultado False para cada uno de los siguientes 
@@ -311,10 +306,13 @@ print(Fore.LIGHTMAGENTA_EX+"2:"+Style.RESET_ALL)
             - Pruebas usando la palabra clave and y la palabra clave or.
             - Prueba si un elemento está en una lista.
             - Prueba si un elemento no está en una lista.
-
 """
 print(Fore.LIGHTCYAN_EX+"-----------Ejercicios Understanding statements--------------".title()+Style.RESET_ALL)
-
+taquitos = 'bistec'
+print(Fore.LIGHTGREEN_EX+"¿taquitos == 'bistec'? ".title()+Style.RESET_ALL+Fore.LIGHTBLACK_EX+"Predigo que es True"+Style.RESET_ALL)
+print(f"La respuesta es {taquitos == 'bistec'}")
+print(Fore.LIGHTRED_EX+"¿taquitos == 'cabeza'? ".title()+Style.RESET_ALL+Fore.LIGHTBLACK_EX+"Predigo que es False"+Style.RESET_ALL)
+print(f"La respuesta es {taquitos == 'Cabeza'}")
 """
 
     Ejercicios: 
