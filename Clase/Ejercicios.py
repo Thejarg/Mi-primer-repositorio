@@ -308,11 +308,90 @@ print(Fore.LIGHTMAGENTA_EX+"2:"+Style.RESET_ALL)
             - Prueba si un elemento no está en una lista.
 """
 print(Fore.LIGHTCYAN_EX+"-----------Ejercicios Understanding statements--------------".title()+Style.RESET_ALL)
+print(Fore.LIGHTMAGENTA_EX+"Ejercicio 1:"+Style.RESET_ALL)
 taquitos = 'bistec'
 print(Fore.LIGHTGREEN_EX+"¿taquitos == 'bistec'? ".title()+Style.RESET_ALL+Fore.LIGHTBLACK_EX+"Predigo que es True"+Style.RESET_ALL)
 print(f"La respuesta es {taquitos == 'bistec'}")
 print(Fore.LIGHTRED_EX+"¿taquitos == 'cabeza'? ".title()+Style.RESET_ALL+Fore.LIGHTBLACK_EX+"Predigo que es False"+Style.RESET_ALL)
 print(f"La respuesta es {taquitos == 'Cabeza'}")
+
+############################################################################################################################################################################################
+
+print(Fore.LIGHTMAGENTA_EX+"Ejercicio2"+Style.RESET_ALL)
+
+name1, name2, name3, name4, name5 = 'Josue', 'Emma', 'Esteban', 'Adriana','Dana'
+###Para no Equivocarme entre los True o False, Cree unos nombres especificos para ponerlos como True y otra para ponerlos como False
+namefalse1, namefalse2, namefalse3, namefalse4, namefalse5 = 'Elaided', 'Mansur', 'Indio', 'Juan','Pedro' 
+
+print(Fore.LIGHTGREEN_EX+"¿name1 == 'Josue'?"+Style.RESET_ALL +Fore.LIGHTBLACK_EX+" Siii, si lo es, Entonces es True"+Style.RESET_ALL)
+print(name1 == 'Josue')
+print("")
+print(Fore.LIGHTGREEN_EX+"¿namefalse1 == 'mansur'?"+Style.RESET_ALL +Fore.LIGHTBLACK_EX+" Noo no lo seria entonces es False"+Style.RESET_ALL)
+print(namefalse1 == 'mansur')
+print("")
+print(Fore.LIGHTGREEN_EX+"¿name2 == 'Emma'?"+Style.RESET_ALL +Fore.LIGHTBLACK_EX+" si lo es entonces es True"+Style.RESET_ALL)
+print(name2 == 'Emma')
+print("")
+print(Fore.LIGHTGREEN_EX+"¿namefalse2 == 'indio'?"+Style.RESET_ALL +Fore.LIGHTBLACK_EX+" Noo no lo seria entonces es False"+Style.RESET_ALL)
+print(namefalse2 == 'indio')
+print("")
+print(Fore.LIGHTGREEN_EX+"¿name3 == 'Esteban'?"+Style.RESET_ALL +Fore.LIGHTBLACK_EX+" Si lo es Asi que por 3 vez es True"+Style.RESET_ALL)
+print(name3 == 'Esteban')
+print("")
+print(Fore.LIGHTGREEN_EX+"¿namefalse3 == 'Pedro'?"+Style.RESET_ALL +Fore.LIGHTBLACK_EX+" Noo no lo seria entonces es False"+Style.RESET_ALL)
+print(namefalse3 == 'Pedro')
+print("")
+print(Fore.LIGHTGREEN_EX+"¿name4 == 'Adriana'?"+Style.RESET_ALL +Fore.LIGHTBLACK_EX+" Si lo es entonces es True"+Style.RESET_ALL)
+print(name4 == 'Adriana')
+print("")
+print(Fore.LIGHTGREEN_EX+"¿namefalse4 == 'juan'?"+Style.RESET_ALL +Fore.LIGHTBLACK_EX+" Noo no lo seria entonces es False"+Style.RESET_ALL)
+print(namefalse4 == 'Mansur')
+print("")
+print(Fore.LIGHTGREEN_EX+"¿name5 == 'Dana'?"+Style.RESET_ALL +Fore.LIGHTBLACK_EX+" Si lo es entonces es True"+Style.RESET_ALL)
+print(name5 == 'Dana')
+print("")
+print(Fore.LIGHTGREEN_EX+"¿namefalse5 == 'elaided'?"+Style.RESET_ALL +Fore.LIGHTBLACK_EX+" Noo no lo seria entonces es False"+Style.RESET_ALL)
+print(namefalse5 == 'elaided')
+############################################################################################################################################################################################
+print(Fore.LIGHTMAGENTA_EX+"Ejercicio 3"+Style.RESET_ALL)
+"""
+    (3)  Más Pruebas Condicionales: No tienes que limitar el número de pruebas
+        a 10. Si quieres intentar más comparaciones, escribe más pruebas y 
+        añádelas a tu script. Asegúrate de tener al menos un 
+        resultado True y un resultado False para cada uno de los siguientes 
+        casos:
+
+            - Pruebas de igualdad y desigualdad con strings.
+            - Pruebas usando la función lower().
+            - Pruebas numéricas que involucren igualdad y desigualdad, mayor 
+                que y menor que, mayor o igual que y menor o igual que.
+            - Pruebas usando la palabra clave and y la palabra clave or.
+            - Prueba si un elemento está en una lista.
+            - Prueba si un elemento no está en una lista.
+"""
+nombre1, nombre2, nombre3, nombre4, nombre5, nombre6, nombre7, nombre8, nombre9, nombre10 = 'Josue', 'Emma', 'Esteban', 'Adriana','Dana', 'Juan', 'Pedro', 'Manuel', 'Maria', 'Carlos'
+Añosmayores = range(18,100)
+añosmenores = range(0,18)
+print(Fore.LIGHTYELLOW_EX+"Primero Probaremos 2 De igualdad y desigualdad con strings"+Style.RESET_ALL)
+print(Fore.LIGHTGREEN_EX+"Primera prueba que verificara si el nombre Emma pertenece a nombre2 "+Style.RESET_ALL)
+print(f"¿Emma Pertenece A Nombre2? = {nombre2 == 'Emma'}")
+print(Fore.LIGHTRED_EX+"Ahora la prueba de desigualdad"+Style.RESET_ALL)
+print(f"¿Adriana Aparece en nombre1? = {nombre1 == 'Adriana'}")
+print(Fore.LIGHTYELLOW_EX+"Ahora haremos pruebas con la funcion lower()"+Style.RESET_ALL)
+print(Fore.LIGHTGREEN_EX+"Primera prueba que verificara si el nombre Josue.lower() pertenece a nombre1"+Style.RESET_ALL)
+print(f"¿Josue.lower() Pertenece A Nombre1? = {nombre1 == 'Josue'.lower()}")
+print(Fore.LIGHTGREEN_EX+"Ahora usaremos una variable con .lower()"+Style.RESET_ALL)
+print(f"¿nombre3.lower() == 'Esteban'? = {nombre3.lower() == 'Esteban'}")
+print(Fore.LIGHTGREEN_EX+"Por ultimo los 2 tendran .lower()"+Style.RESET_ALL)
+print(f"¿nombre4.lower() == 'Adriana'.lower()? = {nombre4.lower() == 'Adriana'.lower()}")
+print(Fore.LIGHTYELLOW_EX+"Ahora pruebas numericas"+Style.RESET_ALL)
+print(Fore.LIGHTYELLOW_EX+"Ahora pruebas usando la palabra clave and y la palabra clave or"+Style.RESET_ALL)
+print(Fore.LIGHTYELLOW_EX+"Ahora pruebas si un elemento está en una lista"+Style.RESET_ALL)
+print(Fore.LIGHTYELLOW_EX+"Ahora pruebas si un elemento no está en una lista"+Style.RESET_ALL)
+
+
+
+
 """
 
     Ejercicios: 
