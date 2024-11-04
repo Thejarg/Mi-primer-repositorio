@@ -385,8 +385,23 @@ print(f"¿nombre3.lower() == 'Esteban'? = {nombre3.lower() == 'Esteban'}")
 print(Fore.LIGHTGREEN_EX+"Por ultimo los 2 tendran .lower()"+Style.RESET_ALL)
 print(f"¿nombre4.lower() == 'Adriana'.lower()? = {nombre4.lower() == 'Adriana'.lower()}")
 print(Fore.LIGHTYELLOW_EX+"Ahora pruebas numericas"+Style.RESET_ALL)
+print(Fore.LIGHTGREEN_EX+"Sera que el numero 10 es mayor que el 5?"+Style.RESET_ALL)
+print("¿10 Es mayor que 5? ="+str(10 > 5))
+print(Fore.LIGHTGREEN_EX+"Si tengo 12 años entonces soy mayor de edad?"+Style.RESET_ALL)
+print(f"Mi edad es 12 años entonces soy mayor de edad? = {str(12) >= str(Añosmayores)}")
+print(Fore.LIGHTGREEN_EX+"Si tengo 23 años soy menor de edad?"+Style.RESET_ALL)
+print(f"Mi edad es 23 años entonces soy menor de edad? = {str(23) >= str(Añosmayores)}")
+print(Fore.LIGHTGREEN_EX+"Tengo 18 años de edad, entonces soy mayor de edad?"+Style.RESET_ALL)
+print(f"Mi edad es 18 años entonces soy mayor de edad? = {str(18) <= str(Añosmayores)}")
 print(Fore.LIGHTYELLOW_EX+"Ahora pruebas usando la palabra clave and y la palabra clave or"+Style.RESET_ALL)
+
+PO = 'Josue'
+LO = 'Dana'
+print(PO and LO == 'Josue'and 'Dana')
 print(Fore.LIGHTYELLOW_EX+"Ahora pruebas si un elemento está en una lista"+Style.RESET_ALL)
+pranda = ['josue','adriana','dana','elizabeth']
+print(Fore.LIGHTGREEN_EX+"¿Sera que adriana esta en la lista pranda? "+Style.RESET_ALL+Fore.LIGHTBLACK_EX+"\nPues Resulta que es: "+Style.RESET_ALL)
+print('adriana' in pranda)
 print(Fore.LIGHTYELLOW_EX+"Ahora pruebas si un elemento no está en una lista"+Style.RESET_ALL)
 
 
