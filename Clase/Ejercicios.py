@@ -450,9 +450,7 @@ print('Jorge' in pranda)
                 puntos.
             - Escribe una versión de este programa que ejecute el bloque if y
                 otra que ejecute el bloque else.
-"""
 
-"""
         3. Colores de Extraterrestres : Convierte tu cadena if-else del 
         ejercicio anterior en una cadena if-elif-else.
 
@@ -499,31 +497,152 @@ print("")
 print(Fore.LIGHTCYAN_EX+"1:"+Style.RESET_ALL)
 color_alien = 'verde','amarillo','rojo'
 if 'verde' in color_alien:
-    print("Felicidades!! Tienes 5 Puntos")
+    print(Fore.LIGHTGREEN_EX+"Felicidades!! Tienes 5 Puntos"+Style.RESET_ALL)
 else:
-    print("No tienes 5 Puntos")
+    print(Fore.LIGHTRED_EX+"No tienes 5 Puntos"+Style.RESET_ALL)
 color_alien = 'amarillo','rojo'
 if 'verde' in color_alien:
-    print("Felicidades!! Tienes 5 Puntos")
+    print(Fore.LIGHTGREEN_EX+"Felicidades!! Tienes 5 Puntos"+Style.RESET_ALL)
 else:
-    print("No tienes 5 Puntos")
+    print(Fore.LIGHTRED_EX+"No tienes 5 Puntos"+Style.RESET_ALL)
+print("")
 print(Fore.LIGHTCYAN_EX+"2:"+Style.RESET_ALL)
+##### LA VERDAD SENTI QUE EL 1 Y 2 SON LO MISMO SOLO CON DIFERENTE FORMA DE PEDIRLO
+alien = 'verde','amarillo','rojo'
+if 'verde' in alien:
+    print(Fore.LIGHTGREEN_EX+"Felicidades!! Tienes 5 Puntos"+Style.RESET_ALL)
+else:
+    print(Fore.LIGHTRED_EX+"No tienes 5 Puntos"+Style.RESET_ALL)
+alien = 'amarillo','rojo'
+if 'verde' in alien:
+    print(Fore.LIGHTGREEN_EX+"Felicidades!! Tienes 5 Puntos"+Style.RESET_ALL)
+else:
+    print(Fore.LIGHTRED_EX+"No tienes 5 Puntos"+Style.RESET_ALL)
 
+print("")
+print(Fore.LIGHTCYAN_EX+"3:"+Style.RESET_ALL)
+aliencito = 'verde', 'amarillo', 'rojo'
 
+if 'verde' in aliencito:
+    print(Fore.LIGHTGREEN_EX+"Felicidades!! Tienes 5 Puntos"+Style.RESET_ALL)
+elif 'amarillo' in aliencito:
+    print(Fore.LIGHTYELLOW_EX+"Felicidades!! Tienes 10 Puntos"+Style.RESET_ALL)
+else:
+    print(Fore.LIGHTRED_EX+"Felicidades!! Tienes 15 Puntos"+Style.RESET_ALL)
 
+aliencito =  'amarillo', 'rojo'
+if 'verde' in aliencito:
+    print(Fore.LIGHTGREEN_EX+"Felicidades!! Tienes 5 Puntos"+Style.RESET_ALL)
+elif 'amarillo' in aliencito:
+    print(Fore.LIGHTYELLOW_EX+"Felicidades!! Tienes 10 Puntos"+Style.RESET_ALL)
+else:
+    print(Fore.LIGHTRED_EX+"Felicidades!! Tienes 15 Puntos"+Style.RESET_ALL)    
+aliencito = 'rojo'
+if 'verde' in aliencito:
+    print(Fore.LIGHTGREEN_EX+"Felicidades!! Tienes 5 Puntos"+Style.RESET_ALL)
+elif 'amarillo' in aliencito:
+    print(Fore.LIGHTYELLOW_EX+"Felicidades!! Tienes 10 Puntos"+Style.RESET_ALL)
+else:
+    print(Fore.LIGHTRED_EX+"Felicidades!! Tienes 15 Puntos"+Style.RESET_ALL)    
+print("")
+print(Fore.LIGHTCYAN_EX+"4:"+Style.RESET_ALL)
+edad = 1
+if edad < 2:
+    print(Fore.BLUE+"¡Es un bebé!")
+elif edad < 4:
+    print(Fore.MAGENTA+"¡Es un niño pequeño!")
+elif edad < 13:
+    print(Fore.GREEN+"¡Es un niño!")
+elif edad < 20:
+    print(Fore.YELLOW+"¡Es un adolescente!")
+elif edad < 65:
+    print(Fore.RED+"¡Es un adulto!")
+else:
+    print(Fore.CYAN+"¡Es un anciano!")
 
+edad = 3
+if edad < 2:
+    print(Fore.BLUE+"¡Es un bebé!")
+elif edad < 4:
+    print(Fore.MAGENTA+"¡Es un niño pequeño!")
+elif edad < 13:
+    print(Fore.GREEN+"¡Es un niño!")
+elif edad < 20:
+    print(Fore.YELLOW+"¡Es un adolescente!")
+elif edad < 65:
+    print(Fore.RED+"¡Es un adulto!")
+else:
+    print(Fore.CYAN+"¡Es un anciano!")
 
+edad = 5
+if edad < 2:
+    print(Fore.BLUE+"¡Es un bebé!")
+elif edad < 4:
+    print(Fore.MAGENTA+"¡Es un niño pequeño!")
+elif edad < 13:
+    print(Fore.GREEN+"¡Es un niño!")
+elif edad < 20:
+    print(Fore.YELLOW+"¡Es un adolescente!")
+elif edad < 65:
+    print(Fore.RED+"¡Es un adulto!")
+else:
+    print(Fore.CYAN+"¡Es un anciano!")
 
+edad = 17
+if edad < 2:
+    print(Fore.BLUE+"¡Es un bebé!")
+elif edad < 4:
+    print(Fore.MAGENTA+"¡Es un niño pequeño!")
+elif edad < 13:
+    print(Fore.GREEN+"¡Es un niño!")
+elif edad < 20:
+    print(Fore.YELLOW+"¡Es un adolescente!")
+elif edad < 65:
+    print(Fore.RED+"¡Es un adulto!")
+else:
+    print(Fore.CYAN+"¡Es un anciano!")
 
+edad = 30
+if edad < 2:
+    print(Fore.BLUE+"¡Es un bebé!")
+elif edad < 4:
+    print(Fore.MAGENTA+"¡Es un niño pequeño!")
+elif edad < 13:
+    print(Fore.GREEN+"¡Es un niño!")
+elif edad < 20:
+    print(Fore.YELLOW+"¡Es un adolescente!")
+elif edad < 65:
+    print(Fore.RED+"¡Es un adulto!")
+else:
+    print(Fore.CYAN+"¡Es un anciano!")
 
+edad = 70
+if edad < 2:
+    print(Fore.BLUE+"¡Es un bebé!")
+elif edad < 4:
+    print(Fore.MAGENTA+"¡Es un niño pequeño!")
+elif edad < 13:
+    print(Fore.GREEN+"¡Es un niño!")
+elif edad < 20:
+    print(Fore.YELLOW+"¡Es un adolescente!")
+elif edad < 65:
+    print(Fore.RED+"¡Es un adulto!")
+else:
+    print(Fore.CYAN+"¡Es un anciano!")
 
-
-
-
-
-
-
-
+print("")
+print(Fore.LIGHTCYAN_EX+"5:"+Style.RESET_ALL)
+favority_food =['manzana','uva','fresa']
+if 'manzana' in favority_food:
+    print(Fore.LIGHTGREEN_EX+"¡Realmente te gustan las manzanas!")
+if 'uva' in favority_food:
+    print(Fore.LIGHTYELLOW_EX+"¡Realmente te gustan las uvas!")
+if 'fresa' in favority_food:    
+    print(Fore.LIGHTRED_EX+"¡Realmente te gustan las fresas!")
+if 'pera' in favority_food:
+    print(Fore.MAGENTA+"¡Realmente te gustan las peras!")
+if 'sandia' in favority_food:
+    print(Fore.BLUE+"¡Realmente te gustan las sandías!")
 
 """
  EJERCICIOS
@@ -563,6 +682,14 @@ print(Fore.LIGHTCYAN_EX+"2:"+Style.RESET_ALL)
             Si se ha usado 'Juan', no se debe aceptar 'JUAN'.
 
 """
+
+print("")
+print(Fore.LIGHTCYAN_EX+"--------------TercerTomo de ejercicios-------------".title()+Style.RESET_ALL)
+print("")
+print(Fore.LIGHTCYAN_EX+"1:"+Style.RESET_ALL)
+
+
+
 """
 
     Ejercicios.
@@ -596,6 +723,7 @@ print(Fore.LIGHTCYAN_EX+"2:"+Style.RESET_ALL)
             en tu salida.
 
 """
+
 """
     Ejercicios:
     
