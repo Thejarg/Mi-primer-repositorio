@@ -663,7 +663,9 @@ if 'sandia' in favority_food:
             "¡Necesitamos encontrar algunos usuarios!".
         - Elimina todos los nombres de usuario de tu lista y asegúrate de que
             se imprima el mensaje correcto.
- 
+"""
+
+"""
     3. Comprobando Nombres de Usuario: Haz lo siguiente para crear un programa
     que simule cómo los sitios web aseguran que cada usuario tenga un nombre
     único.
