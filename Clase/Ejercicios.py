@@ -638,7 +638,7 @@ if 'manzana' in favority_food:
 if 'uva' in favority_food:
     print(Fore.LIGHTYELLOW_EX+"¡Realmente te gustan las uvas!")
 if 'fresa' in favority_food:    
-    print(Fore.LIGHTRED_EX+"¡Realmente te gustan las fresas!")
+    print(Fore.LIGHTRED_EX+"¡Realmente te gustan las fresas!"+Style.RESET_ALL)
 if 'pera' in favority_food:
     print(Fore.MAGENTA+"¡Realmente te gustan las peras!")
 if 'sandia' in favority_food:
@@ -655,7 +655,7 @@ if 'sandia' in favority_food:
             "Hola admin, ¿te gustaría ver un informe de estado?" 
         De lo contrario, imprime un saludo genérico, como: 
             "Hola Eric, gracias por iniciar sesión nuevamente."
-    
+
     2. Sin Usuarios: Agrega una prueba if para asegurarte de que la lista de
     usuarios no esté vacía.
 
@@ -663,7 +663,7 @@ if 'sandia' in favority_food:
             "¡Necesitamos encontrar algunos usuarios!".
         - Elimina todos los nombres de usuario de tu lista y asegúrate de que
             se imprima el mensaje correcto.
-
+ 
     3. Comprobando Nombres de Usuario: Haz lo siguiente para crear un programa
     que simule cómo los sitios web aseguran que cada usuario tenga un nombre
     único.
@@ -684,10 +684,16 @@ if 'sandia' in favority_food:
 """
 
 print("")
-print(Fore.LIGHTCYAN_EX+"--------------TercerTomo de ejercicios-------------".title()+Style.RESET_ALL)
+print(Fore.LIGHTCYAN_EX+"--------------Tercer Tomo de ejercicios-------------".title()+Style.RESET_ALL)
 print("")
 print(Fore.LIGHTCYAN_EX+"1:"+Style.RESET_ALL)
-
+Lista_Nombres =['admin','yepez','ricardo','josue','felipa','brandon','nahim']
+for nombresss in Lista_Nombres:
+    if 'admin' == nombresss:
+        print(Fore.LIGHTBLUE_EX+f"Hola {Fore.LIGHTMAGENTA_EX+nombresss.title()+Style.RESET_ALL}, "+Fore.LIGHTBLUE_EX+"¿Te gustaria ver un informe de estado?"+Style.RESET_ALL)
+    else:
+        print(Fore.LIGHTGREEN_EX+f"Hola {Fore.LIGHTMAGENTA_EX+nombresss.title()+Style.RESET_ALL}, "+Fore.LIGHTGREEN_EX+"Gracias por iniciar sesion nuevamente."+Style.RESET_ALL)
+    
 
 
 """
