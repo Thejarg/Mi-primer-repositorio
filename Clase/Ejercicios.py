@@ -559,7 +559,6 @@ elif edad < 65:
     print(Fore.RED+"¡Es un adulto!")
 else:
     print(Fore.CYAN+"¡Es un anciano!")
-
 edad = 3
 if edad < 2:
     print(Fore.BLUE+"¡Es un bebé!")
@@ -663,9 +662,7 @@ if 'sandia' in favority_food:
             "¡Necesitamos encontrar algunos usuarios!".
         - Elimina todos los nombres de usuario de tu lista y asegúrate de que
             se imprima el mensaje correcto.
-"""
 
-"""
     3. Comprobando Nombres de Usuario: Haz lo siguiente para crear un programa
     que simule cómo los sitios web aseguran que cada usuario tenga un nombre
     único.
@@ -685,6 +682,12 @@ if 'sandia' in favority_food:
 
 """
 
+
+
+
+
+
+
 print("")
 print(Fore.LIGHTCYAN_EX+"--------------Tercer Tomo de ejercicios-------------".title()+Style.RESET_ALL)
 print("")
@@ -696,6 +699,15 @@ for nombresss in Lista_Nombres:
     else:
         print(Fore.LIGHTGREEN_EX+f"Hola {Fore.LIGHTMAGENTA_EX+nombresss.title()+Style.RESET_ALL}, "+Fore.LIGHTGREEN_EX+"Gracias por iniciar sesion nuevamente."+Style.RESET_ALL)
     
+print("")
+print(Fore.LIGHTCYAN_EX+"2:"+Style.RESET_ALL)
+EW = []
+if EW:
+    print(Fore.LIGHTRED_EX+"Elimina todos los usuarios de tu lista!!!"+Style.RESET_ALL)
+else:
+    print(Fore.LIGHTGREEN_EX+"¡Necesitamos encontrar algunos usuarios!!!"+Style.RESET_ALL)
+print("")
+print(Fore.LIGHTCYAN_EX+"3:"+Style.RESET_ALL)
 
 
 """
