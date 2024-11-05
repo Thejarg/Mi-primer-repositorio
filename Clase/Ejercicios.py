@@ -278,6 +278,19 @@ print(Fore.LIGHTRED_EX+"Los ultimos 3 elementos de la lista son:"+Style.RESET_AL
 for agua2 in Agua[2:5]:
     print(agua2.title())
 print(Fore.LIGHTMAGENTA_EX+"2:"+Style.RESET_ALL)
+Mispizzas = ['pepperoni','3_carnes','hawaiana']
+copia = Mispizzas.copy()
+copia.append('3_Quesos')
+Mispizzas.append('suprema')
+print(Fore.LIGHTGREEN_EX+f"mis pizzas favoritas son"+Style.RESET_ALL)
+for pizzasss in Mispizzas:
+    print(Fore.LIGHTBLACK_EX+pizzasss.title()+Style.RESET_ALL)
+print(Fore.LIGHTGREEN_EX+f"Las pizzas favoritas de mi amigo son"+Style.RESET_ALL)
+for pizzasssssss in copia:
+    print(Fore.LIGHTBLACK_EX+pizzasssssss.title()+Style.RESET_ALL)
+
+
+
 """
     Ejercicios: 
         
@@ -307,8 +320,9 @@ print(Fore.LIGHTMAGENTA_EX+"2:"+Style.RESET_ALL)
             - Prueba si un elemento está en una lista.
             - Prueba si un elemento no está en una lista.
 """
-print(Fore.LIGHTCYAN_EX+"-----------Ejercicios Understanding statements--------------".title()+Style.RESET_ALL)
-print(Fore.LIGHTMAGENTA_EX+"Ejercicio 1:"+Style.RESET_ALL)
+print(Fore.LIGHTRED_EX+"-----------Ejercicios Understanding statements--------------".title()+Style.RESET_ALL)
+print(Fore.LIGHTCYAN_EX+"--------------Primer tomo de ejercicios--------------".title()+Style.RESET_ALL)
+print(Fore.LIGHTMAGENTA_EX+"Ejercicios 1:"+Style.RESET_ALL)
 taquitos = 'bistec'
 print(Fore.LIGHTGREEN_EX+"¿taquitos == 'bistec'? ".title()+Style.RESET_ALL+Fore.LIGHTBLACK_EX+"Predigo que es True"+Style.RESET_ALL)
 print(f"La respuesta es {taquitos == 'bistec'}")
@@ -317,7 +331,7 @@ print(f"La respuesta es {taquitos == 'Cabeza'}")
 
 ############################################################################################################################################################################################
 
-print(Fore.LIGHTMAGENTA_EX+"Ejercicio2"+Style.RESET_ALL)
+print(Fore.LIGHTMAGENTA_EX+"Ejercicios 2"+Style.RESET_ALL)
 
 name1, name2, name3, name4, name5 = 'Josue', 'Emma', 'Esteban', 'Adriana','Dana'
 ###Para no Equivocarme entre los True o False, Cree unos nombres especificos para ponerlos como True y otra para ponerlos como False
@@ -353,22 +367,7 @@ print("")
 print(Fore.LIGHTGREEN_EX+"¿namefalse5 == 'elaided'?"+Style.RESET_ALL +Fore.LIGHTBLACK_EX+" Noo no lo seria entonces es False"+Style.RESET_ALL)
 print(namefalse5 == 'elaided')
 ############################################################################################################################################################################################
-print(Fore.LIGHTMAGENTA_EX+"Ejercicio 3"+Style.RESET_ALL)
-"""
-    (3)  Más Pruebas Condicionales: No tienes que limitar el número de pruebas
-        a 10. Si quieres intentar más comparaciones, escribe más pruebas y 
-        añádelas a tu script. Asegúrate de tener al menos un 
-        resultado True y un resultado False para cada uno de los siguientes 
-        casos:
-
-            - Pruebas de igualdad y desigualdad con strings.
-            - Pruebas usando la función lower().
-            - Pruebas numéricas que involucren igualdad y desigualdad, mayor 
-                que y menor que, mayor o igual que y menor o igual que.
-            - Pruebas usando la palabra clave and y la palabra clave or.
-            - Prueba si un elemento está en una lista.
-            - Prueba si un elemento no está en una lista.
-"""
+print(Fore.LIGHTMAGENTA_EX+"Ejercicios 3"+Style.RESET_ALL)
 nombre1, nombre2, nombre3, nombre4, nombre5, nombre6, nombre7, nombre8, nombre9, nombre10 = 'Josue', 'Emma', 'Esteban', 'Adriana','Dana', 'Juan', 'Pedro', 'Manuel', 'Maria', 'Carlos'
 Añosmayores = range(18,100)
 añosmenores = range(0,18)
@@ -394,17 +393,37 @@ print(f"Mi edad es 23 años entonces soy menor de edad? = {str(23) >= str(Añosm
 print(Fore.LIGHTGREEN_EX+"Tengo 18 años de edad, entonces soy mayor de edad?"+Style.RESET_ALL)
 print(f"Mi edad es 18 años entonces soy mayor de edad? = {str(18) <= str(Añosmayores)}")
 print(Fore.LIGHTYELLOW_EX+"Ahora pruebas usando la palabra clave and y la palabra clave or"+Style.RESET_ALL)
-
 PO = 'Josue'
 LO = 'Dana'
-print(PO and LO == 'Josue'and 'Dana')
+if 'Josue' in PO and 'Dana' in LO:
+    print(Fore.LIGHTGREEN_EX+"Los 2 son iguales"+Style.RESET_ALL)
+else:
+    print(Fore.LIGHTRED_EX+"Los 2 no son iguales"+Style.RESET_ALL)
+if 'Josue' in PO and 'Adriana' in LO:
+    print(Fore.LIGHTGREEN_EX+"Los 2 son iguales"+Style.RESET_ALL)
+else:    
+    print(Fore.LIGHTRED_EX+"Los 2 no son iguales"+Style.RESET_ALL)
+if 'Josue' in PO or 'Adriana' in LO:
+    print(Fore.LIGHTGREEN_EX+"Uno de los 2 coincide"+Style.RESET_ALL)
+else:
+    print(Fore.LIGHTRED_EX+"Ninguno de los 2 coincide"+Style.RESET_ALL)
+if 'alfredo' in PO or 'Elizabeth' in LO:
+    print(Fore.LIGHTGREEN_EX+"Uno de los 2 coincide"+Style.RESET_ALL)
+else:    
+    print(Fore.LIGHTRED_EX+"Ninguno de los 2 coincide"+Style.RESET_ALL)
 print(Fore.LIGHTYELLOW_EX+"Ahora pruebas si un elemento está en una lista"+Style.RESET_ALL)
-pranda = ['josue','adriana','dana','elizabeth']
-print(Fore.LIGHTGREEN_EX+"¿Sera que adriana esta en la lista pranda? "+Style.RESET_ALL+Fore.LIGHTBLACK_EX+"\nPues Resulta que es: "+Style.RESET_ALL)
-print('adriana' in pranda)
+pranda = ['Josue','Adriana','Dana','Elizabeth']
+print(Fore.LIGHTGREEN_EX+"¿Sera que Adriana y Dana esta en la lista pranda? "+Style.RESET_ALL+Fore.LIGHTBLACK_EX+"\nPues Resulta que es: "+Style.RESET_ALL)
+print(Fore.LIGHTBLUE_EX+"Adriana:"+Style.RESET_ALL)
+print('Adriana' in pranda)
+print(Fore.LIGHTBLUE_EX+'Dana: '+Style.RESET_ALL)
+print('Dana' in pranda)
 print(Fore.LIGHTYELLOW_EX+"Ahora pruebas si un elemento no está en una lista"+Style.RESET_ALL)
-
-
+print(Fore.LIGHTGREEN_EX+"¿Sera que Nahim y Jorge esta en la lista pranda? "+Style.RESET_ALL+Fore.LIGHTBLACK_EX+"\nPues Resulta que es: "+Style.RESET_ALL)
+print(Fore.LIGHTBLUE_EX+"Nahim:"+Style.RESET_ALL)
+print('Nahim' in pranda)
+print(Fore.LIGHTBLUE_EX+'Jorge: '+Style.RESET_ALL)
+print('Jorge' in pranda)
 
 
 """
@@ -431,7 +450,9 @@ print(Fore.LIGHTYELLOW_EX+"Ahora pruebas si un elemento no está en una lista"+S
                 puntos.
             - Escribe una versión de este programa que ejecute el bloque if y
                 otra que ejecute el bloque else.
+"""
 
+"""
         3. Colores de Extraterrestres : Convierte tu cadena if-else del 
         ejercicio anterior en una cadena if-elif-else.
 
@@ -472,6 +493,38 @@ print(Fore.LIGHTYELLOW_EX+"Ahora pruebas si un elemento no está en una lista"+S
             "¡Realmente te gustan las fresas!"
 
 """
+print("")
+print(Fore.LIGHTCYAN_EX+"--------------Segundo Tomo de ejercicios-------------".title()+Style.RESET_ALL)
+print("")
+print(Fore.LIGHTCYAN_EX+"1:"+Style.RESET_ALL)
+color_alien = 'verde','amarillo','rojo'
+if 'verde' in color_alien:
+    print("Felicidades!! Tienes 5 Puntos")
+else:
+    print("No tienes 5 Puntos")
+color_alien = 'amarillo','rojo'
+if 'verde' in color_alien:
+    print("Felicidades!! Tienes 5 Puntos")
+else:
+    print("No tienes 5 Puntos")
+print(Fore.LIGHTCYAN_EX+"2:"+Style.RESET_ALL)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 """
  EJERCICIOS
     1. Hola Administrador: Haz una lista de cinco o más nombres de usuario, 
