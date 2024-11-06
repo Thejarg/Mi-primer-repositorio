@@ -48,50 +48,36 @@
 from colorama import init, Fore, Style
 init(autoreset=True)
 
-productos = []
-
-# Registro de productos
+Productito = []
 while True:
-    nombre = input("Ingresa el nombre del producto (o 'salir' para terminar): ")
-    if nombre.lower() == 'salir':
+    PE = (Fore.LIGHTCYAN_EX+"Porfavor ingresa el nombre del producto"+Style.RESET_ALL+Fore.LIGHTRED_EX+"(o escribe salir para terminar): "+Style.RESET_ALL)
+    Producto = input(PE)
+    if Producto.lower() == 'salir' or Producto.lower() == 'exit':
         break
-    precio = float(input("Ingresa el precio del producto: "))
-    productos.append({"nombre": nombre, "precio": precio})
+    prechio = (Fore.LIGHTCYAN_EX+"Ahora dime cuanto quieres que cueste: "+Style.RESET_ALL)
+    precio = float(input(prechio))
+    El_append = ({'Producto': Producto,'Precio': precio})
+    Productito.append(El_append)
+    print(f"Agregaste {Producto} Con el precio de ${precio}")
+"""
+        Consulta de productos por precio:
+            - Pide al usuario que ingrese un precio límite.
+            - Usa una list comprehension para generar una lista de productos 
+                cuyo precio sea menor o igual al precio límite dado.
+            - Muestra la lista resultante o indica que no hay productos en ese
+                rango de precio.
 
-# Consulta de productos por precio
-precio_limite = float(input("Ingresa un precio límite para consultar productos: "))
-productos_filtrados = [p for p in productos if p["precio"] <= precio_limite]
-if productos_filtrados:
-    print(Fore.GREEN + "Productos con precio menor o igual a", precio_limite, ":")
-    for p in productos_filtrados:
-        print(Fore.YELLOW + f"Nombre: {p['nombre']}, Precio: {p['precio']}")
-else:
-    print(Fore.RED + "No hay productos en ese rango de precio.")
-
-# Actualización de precios
-nombre_actualizar = input("Ingresa el nombre del producto que quieres actualizar: ")
-encontrado = False
-for p in productos:
-    if p["nombre"].lower() == nombre_actualizar.lower():
-        nuevo_precio = float(input("Ingresa el nuevo precio: "))
-        p["precio"] = nuevo_precio
-        encontrado = True
-        print(Fore.GREEN + "Precio actualizado.")
+"""
+while True:
+    conchulta = (Fore.LIGHTCYAN_EX+"¿Deseas Consultar algun producto?"+Style.RESET_ALL+Fore.LIGHTMAGENTA_EX+"Escribe 'S' / 'N' "+Style.RESET_ALL)
+    Consulta = input(conchulta)
+    if Consulta.lower() == "s":
+        limite = (Fore.LIGHTCYAN_EX+"Ingresa el precio maximo de consulta: ")
+        que_consultas = float(input(limite))
+        el_que_esta_dentro_del_rango = [con for con in Productito if con['precio']<=limite]
+        if el_que_esta_dentro_del_rango:
+            print(Fore.LIGHTCYAN_EX+"Precio menor o igual al limite")
+            for con in el_que_esta_dentro_del_rango:
+                print() 
+    if Consulta.lower() == "n":
         break
-if not encontrado:
-    print(Fore.RED + "Producto no encontrado.")
-
-# Resumen de productos
-print(Style.RESET_ALL + "Resumen de todos los productos:")
-for p in productos:
-    print(Fore.BLUE + f"Nombre: {p['nombre']}, Precio: {p['precio']}")
-
-# Filtrar productos por precio mayor a un valor dado
-precio_filtro = float(input("Ingresa un precio para filtrar productos con precio mayor a este valor: "))
-productos_filtrados = [p for p in productos if p["precio"] > precio_filtro]
-if productos_filtrados:
-    print(Fore.GREEN + "Productos con precio mayor a", precio_filtro, ":")
-    for p in productos_filtrados:
-        print(Fore.YELLOW + f"Nombre: {p['nombre']}, Precio: {p['precio']}")
-else:
-    print(Fore.RED + "No hay productos en ese rango de precio.")
