@@ -26,34 +26,20 @@ muestra al final el mensaje oculto en consola con la funcion print.
 """
 mensaje= ["u","n","e","m","i"," ","t","o"," ","Q","o","a","d","A","R"]
 for letra in mensaje:
-    if letra == "a":
+    if letra == "a" or letra == "A":
         print("e", end="")
-    elif letra == "A":
-        print("e", end="")
-    elif letra == "e":
+    elif letra == "e" or letra == "E":
         print("i", end="")
-    elif letra == "E":
-        print("i",end="")
-    elif letra == "i":
-        print("o", end="")
-    elif letra == "I":
-        print("o", end="")    
-    elif letra == "o":
+    elif letra == "i" or letra == "I":
+        print("o", end="")   
+    elif letra == "o" or letra == "O":
         print("u", end="")
-    elif letra == "O":
-        print("u", end="")
-    elif letra == "u":
-        print("a", end="")
-    elif letra == "U":
+    elif letra == "u" or letra == "U":
         print("a", end="")    
-    elif letra == "q":
-        print("p", end="")
-    elif letra == "Q":
-        print("p", end="")    
-    elif letra == "r":
+    elif letra == "q" or letra == "Q":
+        print("p", end="")   
+    elif letra == "r" or letra == "R":
         print("s", end="")
-    elif letra == "R":
-        print("s", end="")    
-    
+       
     else:
         print(letra, end="")

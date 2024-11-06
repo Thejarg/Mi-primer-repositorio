@@ -681,13 +681,6 @@ if 'sandia' in favority_food:
             Si se ha usado 'Juan', no se debe aceptar 'JUAN'.
 
 """
-
-
-
-
-
-
-
 print("")
 print(Fore.LIGHTCYAN_EX+"--------------Tercer Tomo de ejercicios-------------".title()+Style.RESET_ALL)
 print("")
@@ -709,6 +702,13 @@ else:
 print("")
 print(Fore.LIGHTCYAN_EX+"3:"+Style.RESET_ALL)
 
+usuarios_actuales = ['Yepez','Josue','Felipa','Brandon','Nahim']
+nuevos_usuarios = ['Yepez','Dana','Felipa','isai','Nahim']
+for persona in nuevos_usuarios:
+    if persona in usuarios_actuales:
+        print(Fore.LIGHTRED_EX+f"El usuario {persona} ya esta ocupado"+Style.RESET_ALL)
+    else:
+        print(Fore.LIGHTGREEN_EX+f"El usuario {persona} esta disponible"+Style.RESET_ALL)
 
 """
 
