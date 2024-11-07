@@ -289,8 +289,31 @@ print(Fore.LIGHTGREEN_EX+f"Las pizzas favoritas de mi amigo son"+Style.RESET_ALL
 for pizzasssssss in copia:
     print(Fore.LIGHTBLACK_EX+pizzasssssss.title()+Style.RESET_ALL)
 
+"""
 
+    Buffet: Un restaurante "estilo buffet" ofrece solo cinco alimentos 
+        básicos. Piensa en cinco alimentos simples y guárdalos en una 
+        tupla.
 
+    - Usa un bucle for para imprimir cada alimento que el restaurante 
+        ofrece.
+    - Intenta modificar uno de los elementos y asegúrate de que Python 
+        rechace el cambio.
+    - El restaurante cambia su menú, reemplazando dos de los elementos 
+        con alimentos diferentes. Agrega un bloque de código que reescriba
+        la tupla, y luego usa un bucle for para imprimir cada uno de los 
+        elementos del menú revisado.
+
+"""
+"""
+buffet = ('Bistek','Pizza','Hamburguesa','Sandwich','Tacos')
+for comidita in buffet:
+    print(comidita)
+buffet = ('tripa','tapanile','Hamburguesa','Sandwich','Tacos')
+for comidita2 in buffet:
+    print(comidita2)
+buffet.append('pan')
+"""
 """
     Ejercicios: 
         
@@ -710,6 +733,9 @@ for persona in nuevos_usuarios:
     else:
         print(Fore.LIGHTGREEN_EX+f"El usuario {persona} esta disponible"+Style.RESET_ALL)
 
+
+print("")
+print(Fore.LIGHTRED_EX+"-----------Ejercicios Understanding dictionaries--------------".title()+Style.RESET_ALL)
 """
 
     Ejercicios.
@@ -726,7 +752,9 @@ for persona in nuevos_usuarios:
             persona y guárdalo como valor en tu diccionario. Imprime el nombre de
             cada persona y su número favorito. Para hacerlo más divertido, 
             encuesta a algunos amigos y obtén datos reales para tu programa.
+"""
 
+"""
         3. Glosario: Un diccionario de Python puede usarse para modelar un 
         diccionario real. Sin embargo, para evitar confusiones, llamémoslo 
         glosario.
@@ -743,7 +771,10 @@ for persona in nuevos_usuarios:
             en tu salida.
 
 """
-
+print("")
+print(Fore.LIGHTCYAN_EX+"1"+Style.RESET_ALL)
+Mi_Amigo = {'Nombre': 'Antonio', 'Apellido': 'Ramirez', 'Edad': 19, 'Ciudad': 'victoria'}
+print(Mi_Amigo)
 """
     Ejercicios:
     
